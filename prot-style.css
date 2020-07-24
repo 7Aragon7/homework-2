@@ -1,0 +1,59 @@
+body {
+    background-color: plum;
+}
+
+
+#name {
+    margin-left: 50px;
+    background-color: aquamarine;
+    color: azure;
+    max-width: 300px;
+    text-align: center;
+}
+
+#navbar {
+    border-bottom-style: solid;
+    background-color: cornflowerblue;
+    width: 100%;
+}
+
+.navbar-brand {
+    color: darkred;
+}
+
+.myrow {
+    margin-top: 30px;
+    padding-left: 150px;
+    background-attachment: hsl(0, 22%, 87%);
+}
+
+.container {
+    background-color: darkgreen;
+    padding-top: 50px;
+    margin: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.footer {
+    background-color: cyan;
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    border-top: solid;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: rgb(53, 122, 145);
+    }
+  
+    .card-columns {
+      @include media-breakpoint-only(lg) {
+        column-count: 4;
+      }
+    }
+  }
